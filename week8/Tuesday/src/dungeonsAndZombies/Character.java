@@ -9,6 +9,8 @@ public abstract class Character {
 	public Character(int health, int mana) {
 		this.health = health;
 		this.mana = mana;
+		this.currentHealth = health;
+		this.currentMana = mana;
 	}
 	
 	public boolean isAlive() {

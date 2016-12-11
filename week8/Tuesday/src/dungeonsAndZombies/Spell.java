@@ -4,7 +4,7 @@ public class Spell extends Tool {
 	private int manaCost;
 	private int castRange;
 	
-	public Spell(String name, String damage, int manaCost, int castRange) {
+	public Spell(String name, int damage, int manaCost, int castRange) {
 		super(name, damage);
 		this.manaCost = manaCost;
 		this.castRange = castRange;

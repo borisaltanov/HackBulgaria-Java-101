@@ -2,7 +2,7 @@ package dungeonsAndZombies;
 
 public class Weapon extends Tool{
 
-	public Weapon(String name, String damage) {
+	public Weapon(String name, int damage) {
 		super(name, damage);
 	}
 

@@ -2,9 +2,9 @@ package dungeonsAndZombies;
 
 public abstract class Tool {
 	private String name;
-	private String damage;
+	private int damage;
 	
-	public Tool(String name, String damage) {
+	public Tool(String name, int damage) {
 		this.name = name;
 		this.damage = damage;
 	}
@@ -17,11 +17,11 @@ public abstract class Tool {
 		this.name = name;
 	}
 
-	public String getDamage() {
+	public int getDamage() {
 		return damage;
 	}
 
-	public void setDamage(String damage) {
+	public void setDamage(int damage) {
 		this.damage = damage;
 	}
 }

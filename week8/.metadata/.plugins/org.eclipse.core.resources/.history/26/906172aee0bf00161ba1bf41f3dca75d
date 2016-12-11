@@ -1,0 +1,9 @@
+package dungeonsAndZombies;
+
+public class Dungeon {
+	private String[][] map;
+	
+	public Dungeon(String[][] map){
+		this.map = map;
+	}
+}
