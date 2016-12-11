@@ -1,0 +1,88 @@
+package dungeonsAndZombies;
+
+public class Hero {
+	private String name;
+	private String title;
+	private int health;
+	private int mana;
+	private int manaRegenRate;
+	private int currentHealth;
+	private int currentMana;
+	
+	public Hero(String name, String title, int health, int mana, int manaRegenRate) {
+		this.name = name;
+		this.title = title;
+		this.health = health;
+		this.mana = mana;
+		this.manaRegenRate = manaRegenRate;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	public String getTitle() {
+		return title;
+	}
+	public int getManaRegenRate() {
+		return manaRegenRate;
+	}
+	
+	public int getCurrentHealth() {
+		return currentHealth;
+	}
+	public void setCurrentHealth(int currentHealth) {
+		this.currentHealth = currentHealth;
+	}
+	public int getCurrentMana() {
+		return currentMana;
+	}
+
+	public String knownAs() {
+		return this.getName() + " the " + this.getTitle();
+	}
+	
+	public int getHealth() {
+		return health;
+	}
+
+	public int getMana() {
+		return mana;
+	}
+	
+	public boolean isAlive() {
+		return this.getHealth() > 0;
+	}
+	
+	public boolean canCast() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	
+	public void setCurrentMana(int currentMana) {
+		this.currentMana = currentMana;
+	}
+
+	public void takeDamage(int damagePoints) {
+		if (this.getCurrentHealth() - damagePoints <= 0) {
+			this.setCurrentHealth(0);
+		} else {			
+			this.setCurrentHealth(this.getCurrentHealth() - damagePoints);
+		}
+	}
+
+	public void takeHealing(int healingPoints) {
+		if (this.getCurrentHealth() + healingPoints > this.getHealth()) {
+			this.setCurrentHealth(this.getHealth());
+		}
+		this.setCurrentHealth(this.getCurrentHealth() + healingPoints);
+	}
+	
+	public void takeMana(int manaPoints) {
+		if (this.getCurrentMana() + this.manaPoints >= this.getMana()) {
+			this.setCurrentMana(this.getMana());;
+		} else {
+			this.setCurrentMana(this.getCurrentMana() + manaPoints);
+		}
+	}
+
+}

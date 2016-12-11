@@ -1,0 +1,8 @@
+package dungeonsAndZombies;
+
+public abstract class Character {
+	private int health;
+	private int mana;
+	
+	
+}

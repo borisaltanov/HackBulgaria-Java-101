@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="Tuesday.MyQueueInterface"/>
+<fullyQualifiedTypeName name="Tuesday.MyQueue"/>
+<fullyQualifiedTypeName name="Tuesday.MyLinkedList"/>
+<fullyQualifiedTypeName name="Tuesday.MyStackInterface"/>
+<fullyQualifiedTypeName name="Thursday.StackSort"/>
+<fullyQualifiedTypeName name="Thursday.MyLinkedList"/>
+<fullyQualifiedTypeName name="Thursday.MyStackInterface"/>
+<fullyQualifiedTypeName name="Thursday.SetOfStacks"/>
+<fullyQualifiedTypeName name="java.util.Stack"/>
+<fullyQualifiedTypeName name="java.lang.Number"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="Thursday.StackBonus"/>
+<fullyQualifiedTypeName name="java.lang.Comparable"/>
+<fullyQualifiedTypeName name="Friday.BinarySearchTreeInterface"/>
+<fullyQualifiedTypeName name="Friday.BinarySearch"/>
+<fullyQualifiedTypeName name="Friday.BinarySearchTree"/>
+<fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthSeparatorUI"/>
+<fullyQualifiedTypeName name="Friday.BinarySearchTree.Node"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="java.lang.IndexOutOfBoundsException"/>
+<fullyQualifiedTypeName name="Friday.Main"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
+</qualifiedTypeNameHistroy>

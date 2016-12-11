@@ -1,0 +1,15 @@
+package dungeonsAndZombies;
+
+public class Hero extends Character{
+	private String name;
+	private String title;
+	private int manaRegenRate;
+
+	public Hero(String name, String title, int health, int mana, int manaRegenRate) {
+		super(health, mana);
+		this.name = name;
+		this.title = title;
+		this.manaRegenRate = manaRegenRate;
+	}
+
+}

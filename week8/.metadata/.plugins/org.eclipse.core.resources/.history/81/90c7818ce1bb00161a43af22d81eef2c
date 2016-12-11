@@ -1,0 +1,56 @@
+package dungeonsAndZombies;
+
+public class Hero {
+	private String name;
+	private String title;
+	private int health;
+	private int mana;
+	private int manaRegenRate;
+	
+	public String getName() {
+		return name;
+	}
+	public String getTitle() {
+		return title;
+	}
+	public int getManaRegenRate() {
+		return manaRegenRate;
+	}
+	
+	public String knownAs() {
+		return this.getName() + " the " + this.getTitle();
+	}
+	
+	public int getHealth() {
+		return health;
+	}
+
+	public int getMana() {
+		return mana;
+	}
+	
+	public boolean isAlive() {
+		return this.getHealth() > 0;
+	}
+	
+	public boolean canCast() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	
+	public void takeDamage(int damagePoints) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	public void takeHealing(int healingPoints) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	public void takeMana(int manaPoints) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

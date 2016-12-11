@@ -1,0 +1,5 @@
+package dungeonsAndZombies;
+
+public abstract class Character {
+
+}

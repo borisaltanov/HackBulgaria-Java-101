@@ -1,0 +1,21 @@
+package pandaSocialNetwork;
+
+public class NetworkTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		PandaSocialNetwork network = new PandaSocialNetwork();
+		Panda ivo = new Panda("Ivo", "ivo@pandamail.com", "male");
+		Panda rado = new Panda("Rado", "rado@pandamail.com", "male");
+		Panda tony = new Panda("Tony", "tony@pandamail.com", "female");
+
+		network.addPanda(ivo);
+		network.addPanda(rado);
+		network.addPanda(tony);
+
+		network.makeFriends(ivo, rado);
+		network.makeFriends(rado, tony);
+
+	}
+
+}

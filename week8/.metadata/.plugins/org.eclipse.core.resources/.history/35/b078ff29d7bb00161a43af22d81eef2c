@@ -1,0 +1,13 @@
+package week8;
+
+public class ToShoot {
+	int damage;
+	int durability;
+	
+	public public ToShoot() {
+		// TODO Auto-generated constructor stub
+	}(int damage, int durability) {
+		this.damage = damage;
+		this.durability = durability;
+	}
+}

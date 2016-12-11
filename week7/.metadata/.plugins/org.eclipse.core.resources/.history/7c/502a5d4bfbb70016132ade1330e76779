@@ -1,0 +1,104 @@
+package pandaSocialNetwork;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedList;
+
+public class PandaSocialNetwork {
+	
+	private HashMap<Panda, HashSet<Panda>> graph = new HashMap<>();
+
+	public void addPanda(Panda panda) {
+		checkAndAdd(panda);
+	}
+	
+	public boolean hasPanda(Panda panda) {
+		return this.graph.containsKey(panda);
+	}
+	
+	public void makeFriends(Panda panda1, Panda panda2) {
+		if (panda1 == panda2) {
+			return;
+		}
+		checkAndAdd(panda1);
+		checkAndAdd(panda2);
+		this.graph.get(panda1).add(panda2);
+		this.graph.get(panda2).add(panda1);
+	}
+
+	private void checkAndAdd(Panda panda1) {
+		if (!this.graph.containsKey(panda1)) {
+			this.graph.put(panda1, new HashSet<Panda>());
+		}
+	}
+	
+	public boolean areFriends(Panda panda1, Panda panda2) {
+		if (isInFriends(panda1, panda2) && isInFriends(panda2, panda1)) {
+			return true;
+		}
+		return false;
+	}
+
+	private boolean isInFriends(Panda panda1, Panda panda2) {
+		return this.graph.get(panda1).contains(panda2);
+	}
+	
+	public HashSet<Panda> friendsOf(Panda panda) {
+		try {
+			return graph.get(panda);
+		} catch (NullPointerException e) {
+			System.out.println(panda.getFirstName() + "is not a member of the network.");
+			return null;
+		}
+	}
+	
+	private HashMap<Panda, Boolean> vis = new HashMap<>();
+
+	private HashMap<Panda, Panda> prev = new HashMap<>();
+
+	public LinkedList<Panda> getDirections(Panda start, Panda finish){
+	    LinkedList directions = new LinkedList();
+	    Queue<Panda> q = new LinkedList();
+	    Node current = start;
+	    q.add(current);
+	    vis.put(current, true);
+	    while(!q.isEmpty()){
+	        current = q.remove();
+	        if (current.equals(finish)){
+	            break;
+	        }else{
+	            for(Node node : current.getOutNodes()){
+	                if(!vis.contains(node)){
+	                    q.add(node);
+	                    vis.put(node, true);
+	                    prev.put(node, current);
+	                }
+	            }
+	        }
+	    }
+	    if (!current.equals(finish)){
+	        System.out.println("can't reach destination");
+	    }
+	    for(Node node = finish; node != null; node = prev.get(node)) {
+	        directions.add(node);
+	    }
+	    directions.reverse();
+	    return directions;
+	}
+	
+	public int connectionLevel(Panda panda1, Panda panda2) {
+		
+		
+		
+		
+		
+		return 1;
+	}
+	
+	public boolean areConnected(Panda panda1, Panda panda2) {
+		return connectionLevel(panda1, panda2) != -1;
+	}
+
+
+
+}

@@ -1,0 +1,9 @@
+package week02;
+
+public class IntVector {
+	int arr[] = new int[10];
+	
+	public int get(int index) {
+		return arr[index];
+	}
+}

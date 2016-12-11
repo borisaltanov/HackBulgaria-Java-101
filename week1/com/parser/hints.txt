@@ -1,0 +1,10 @@
+lines can be:
+1. blank = ""
+2. Object = [<--->]
+3. key-val = <--->=<--->
+
+bools
+if(blank && inObject)
+    close
+if(blank) continue
+if

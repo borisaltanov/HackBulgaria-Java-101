@@ -1,0 +1,59 @@
+package Thursday;
+
+import java.util.Vector;
+
+public class Function {
+	public String functionName;
+	public String argumentName;
+	public String functionBody;
+	
+	public Function(String in) {
+		String[] functionParts = in.split(" \\= ");
+		String[] nameAndArgument = functionParts[0].split(" ");
+		this.functionName = nameAndArgument[0];
+		this.argumentName = nameAndArgument[1];
+		this.functionBody = functionParts[1];
+	}
+	
+	public boolean isOperator(String bodyPart) {
+		return bodyPart.contains("+") || bodyPart.contains("-");
+	}
+	
+	public boolean isInteger(String bodyPart) {
+		for(int i = 0; i < bodyPart.length(); i++) {
+			if (bodyPart.charAt(i) < '0' || bodyPart.charAt(i) >= '0') {
+				return false;
+			}
+		}
+		return true;
+	}
+	
+	public boolean isFunction(String bodyPart) {
+		return bodyPart.matches("[a-z]+\\(\\w+\\)");
+		
+	}
+	
+	public int evaluate(int x) {
+		int result = 0;
+		String[] bodyParts = this.functionBody.split(" ");
+		boolean isFirst = true;
+		Vector<Integer> elements = new Vector<Integer>();
+		for(String bodyPart: bodyParts) {
+			if (isInteger(bodyPart)) {
+				elements.add(Integer.parseInt(bodyPart))
+			}
+			if (bodyPart.equals(this.argumentName)) {
+				elements.add(x)
+			}
+			if (isFunction(bodyPart)) {
+				
+			}
+			
+		}
+		
+		
+		
+		return result;
+	}
+
+}

@@ -1,0 +1,39 @@
+package GameOfLife;
+
+
+
+public class GameOfLife {
+	public char matrix[][];
+	public int size;
+	
+	public GameOfLife() {};
+	
+	public GameOfLife (int size) {
+		this.size = size;
+		this.matrix = new char[size][size];
+		for (int i = 0; i < size; i++) {
+			for (int j = 0; j < size; j++) {
+				matrix[i][j] = '□';
+			}
+			
+		}
+	}
+	
+	
+	public void fillSquare(int x, int y) {
+		this.matrix[x][y] = '■';
+	}
+	
+	public String toString() {
+		String result = "";
+		for (int i = 0; i < size; i++) {
+			for (int j = 0; j < size; j++) {
+				result += matrix[i][j];
+			}
+			result += "\n";
+			
+		}
+		return result;
+	}
+	
+}

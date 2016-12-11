@@ -1,0 +1,31 @@
+package SortingObjects;
+
+public class Student implements Comparable<Student>{
+	private final String firstName;
+	private final String thirdName;
+	private final double grade;
+	
+	public Student(String firstName, String thirdName, double grade) {
+		this.firstName = firstName;
+		this.thirdName = thirdName;
+		this.grade = grade;
+	}
+	
+	public String getThirdName() {
+		return thirdName;
+	}
+
+	public double getGrade() {
+		return grade;
+	}
+
+	public String getFirstName(){
+		return firstName;
+	}
+
+	@Override
+	public int compareTo(Student o) {
+		// TODO Auto-generated method stub
+		return this.getFirstName().compareTo(o.getFirstName());
+	}
+}

@@ -1,0 +1,6 @@
+package dungeonsAndZombies;
+
+public abstract class Tool {
+	private String name;
+	private String damage;
+}

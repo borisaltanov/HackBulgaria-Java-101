@@ -1,0 +1,25 @@
+package week8;
+
+public class Sword {
+	int damage;
+	int durability;
+	int maxDurability;
+	
+	public Sword(int damage, int durability) {
+		this.damage = damage;
+		this.durability = durability;
+		this.maxDurability = durability;
+	}
+
+	
+	public int hit() {
+		if(durability > 0 && durability >= maxDurability/2) {
+			durability--;
+			return damage;
+		}
+		if(damage > 1) {
+			damage--;
+		}
+		return damage;
+	}
+}

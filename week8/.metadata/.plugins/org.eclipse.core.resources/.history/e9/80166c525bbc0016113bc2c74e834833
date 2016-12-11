@@ -1,0 +1,31 @@
+package daaa;
+
+import java.util.Arrays;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a[] = {4, 9, 2, 1};
+		int b[] = {8, 7, 4, 9};
+		 
+		Arrays.sort(a);
+		Arrays.sort(b);
+		 
+		int i = 0;
+		int j = 0;
+		 
+		while (i < a.length && j < b.length) {
+		    if (a[i] == b[j]) {
+		        System.out.println(a[i]);
+		        i++;
+		        j++;
+		    } else if (a[i] > b[j]) {
+		        j++;
+		    } else {
+		        i++;
+		    }
+		}
+	}
+
+}
