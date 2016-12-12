@@ -11,8 +11,13 @@
 <fullyQualifiedTypeName name="dungeonsAndZombies.Tool"/>
 <fullyQualifiedTypeName name="dungeonsAndZombies.Character"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
-<fullyQualifiedTypeName name="dungeonsAndZombies.Dungeon"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="dungeonsAndZombies.Hero"/>
 <fullyQualifiedTypeName name="javax.swing.Painter"/>
+<fullyQualifiedTypeName name="dungeonsAndZombies.Spell"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="dungeonsAndZombies.Enemy"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="dungeonsAndZombies.Dungeon"/>
+<fullyQualifiedTypeName name="dungeonsAndZombies.Fight"/>
+<fullyQualifiedTypeName name="dungeonsAndZombies.Weapon"/>
 </qualifiedTypeNameHistroy>
