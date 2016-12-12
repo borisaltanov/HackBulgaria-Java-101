@@ -4,6 +4,8 @@ public class Hero extends Character{
 	private String name;
 	private String title;
 	private int manaRegenRate;
+	private Weapon weapon;
+	private Spell spell;
 
 	public Hero(String name, String title, int health, int mana, int manaRegenRate) {
 		super(health, mana);
@@ -39,17 +41,31 @@ public class Hero extends Character{
 	public void setManaRegenRate(int manaRegenRate) {
 		this.manaRegenRate = manaRegenRate;
 	}
+	
+	public void equip(Weapon w) {
+		this.weapon = w;
+	}
+	
+	public void learn(Spell s) {
+		this.spell = s;
+	}
+
 
 	@Override
-	public boolean canCast() {
-		// TODO Auto-generated method stub
-		return false;
+	public int attack(String type) {
+		if (type == "weapon") {
+			return this.weapon.getDamage();
+		}
+		if (type == "spell" && this.canCast(this.spell)) {
+			return this.spell.getDamage();
+		}
+		return 0;
 	}
 
 	@Override
-	public boolean attack() {
+	public boolean canCast(Spell s) {
 		// TODO Auto-generated method stub
-		return false;
+		return this.getCurrentMana() > s.getManaCost();
 	}
 	
 }

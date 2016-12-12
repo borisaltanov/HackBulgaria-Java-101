@@ -16,14 +16,18 @@ public class Enemy extends Character{
 		this.damage = damage;
 	}
 	
+	public int attack() {
+		return this.getDamage();
+	}
+	
 	@Override
-	public boolean canCast() {
+	public int attack(String type) {
 		// TODO Auto-generated method stub
-		return false;
+		return 0;
 	}
 
 	@Override
-	public boolean attack() {
+	public boolean canCast(Spell s) {
 		// TODO Auto-generated method stub
 		return false;
 	}

@@ -17,9 +17,9 @@ public abstract class Character {
 		return this.getCurrentHealth() > 0;
 	}
 	
-	public abstract boolean canCast();
+	public abstract boolean canCast(Spell s);
 	
-	public abstract boolean attack();
+	public abstract int attack(String type);
 	
 	public int getCurrentHealth() {
 		return currentHealth;
@@ -45,6 +45,14 @@ public abstract class Character {
 		return mana;
 	}
 
+	public void takaDamage(int damagePoints) {
+		if (this.getCurrentHealth() - damagePoints <= 0) {
+			this.setCurrentHealth(0);
+		} else {
+			this.setCurrentHealth(getCurrentHealth() - damagePoints);
+		}
+	}
+	
 	public void takeHealing(int healingPoints) {
 		if (this.getCurrentHealth() + healingPoints > this.getHealth()) {
 			this.setCurrentHealth(this.getHealth());

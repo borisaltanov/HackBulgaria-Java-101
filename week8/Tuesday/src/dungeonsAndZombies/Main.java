@@ -12,11 +12,17 @@ public class Main {
 		
 		Dungeon d = new Dungeon(map);
 		Hero h = new Hero("Birad", "Dragonslayer", 100, 100, 5);
+		Weapon w = new Weapon("fsd", 20);
+		h.equip(w);
 		d.spawn(h);
 		d.printMap();
 		d.move("left");
 		d.printMap();
-		d.move("up");
+		d.move("down");
+		d.move("down");
+		d.move("down");
+		d.printMap();
+		d.move("left");
 		d.printMap();
 
 	}
