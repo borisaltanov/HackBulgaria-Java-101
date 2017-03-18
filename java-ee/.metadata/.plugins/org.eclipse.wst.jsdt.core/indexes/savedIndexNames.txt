@@ -1,0 +1,8 @@
+INDEX VERSION 1.3+/home/boris/java101/java-ee/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+981225292.index
+1259468279.index
+3173592653.index
+2111968380.index
+3299052211.index
+3650612093.index
+585921199.index

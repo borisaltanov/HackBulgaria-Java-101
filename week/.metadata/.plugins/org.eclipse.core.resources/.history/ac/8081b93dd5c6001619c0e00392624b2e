@@ -1,0 +1,15 @@
+package typeChecking;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Function f = new Function("f :: String -> Int");
+		System.out.println(f.getName());
+		System.out.println(f.getArgumentType());
+		System.out.println(f.getReturnType());
+
+	}
+
+}

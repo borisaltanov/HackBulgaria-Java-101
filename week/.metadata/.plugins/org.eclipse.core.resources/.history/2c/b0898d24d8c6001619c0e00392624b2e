@@ -1,0 +1,20 @@
+package typeChecking;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class Composition {
+	public HashMap<String, Function> functions = new HashMap<String, Function>();
+	public ArrayList<String> compositon;
+	
+	public Composition() {
+	}
+	
+	public void makeCompositon(String comp) {
+		compositon = comp.split(" . ")
+	}
+	
+	
+	
+
+}

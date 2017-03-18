@@ -8,7 +8,6 @@
 <fullyQualifiedTypeName name="java.util.Collections"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
-<fullyQualifiedTypeName name="pandaSocialNetwork.Panda"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="java.util.HashSet"/>
 <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
@@ -16,4 +15,12 @@
 <fullyQualifiedTypeName name="java.util.LinkedList"/>
 <fullyQualifiedTypeName name="java.util.Queue"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="mysqlhelp.Client"/>
+<fullyQualifiedTypeName name="mysqlhelp.MySQLHelper"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="org.junit.Before"/>
+<fullyQualifiedTypeName name="pandaSocialNetwork.Panda"/>
+<fullyQualifiedTypeName name="pandaSocialNetwork.NetworkTest"/>
+<fullyQualifiedTypeName name="pandaSocialNetwork.PandaSocialNetworkTest"/>
+<fullyQualifiedTypeName name="pandaSocialNetwork.PandaSocialNetwork"/>
 </qualifiedTypeNameHistroy>

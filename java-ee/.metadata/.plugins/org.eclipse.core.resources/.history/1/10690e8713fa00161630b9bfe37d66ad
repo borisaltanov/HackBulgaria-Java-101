@@ -1,0 +1,14 @@
+package com.main;
+
+import com.service.PasswordManager;
+
+public class SQLtest {
+
+	public static void main(String[] args) {
+		PasswordManager pm = new PasswordManager();
+		
+		System.out.println(pm.encryptPass("peshoasdasd"));
+
+	}
+
+}

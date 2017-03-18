@@ -1,0 +1,14 @@
+package com.main;
+
+import com.service.SocialLinkManager;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*SocialLinkManager.follow("stunji", "boris");*/
+		SocialLinkManager.follow("Geshh", "boris");
+		SocialLinkManager.unfollow("stunji", "boris");
+	}
+
+}

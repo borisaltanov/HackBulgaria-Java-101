@@ -1,0 +1,16 @@
+package typeChecking;
+
+import java.util.HashMap;
+
+public class Composition {
+	public HashMap<String, Function> functions = new HashMap<String, Function>();
+	public String composition;
+	
+	public Composition(String in) {
+		
+	}
+	
+	
+	
+
+}

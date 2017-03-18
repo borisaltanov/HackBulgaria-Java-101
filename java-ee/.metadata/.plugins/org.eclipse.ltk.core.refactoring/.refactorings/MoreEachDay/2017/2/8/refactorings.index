@@ -1,0 +1,25 @@
+1487668930087	Rename resource 'NewFile.xml'
+1487671429975	Delete element
+1487671477432	Move compilation unit
+1487671614459	Rename field 'mail'
+1487676210304	Rename type 'SocialGraph'
+1487676855989	Rename resource 'social_grahp.hbm.xml'
+1487760243219	Rename package 'com.controllers'
+1487760274775	Delete element
+1487760300079	Delete element
+1487760347499	Delete element
+1487761760586	Move 'hibernate.cfg.xml' to 'src'
+1487761837294	Move 'create_database.sql' to 'src'
+1487761844142	Delete element
+1487761868757	Move compilation unit
+1487762631912	Move compilation unit
+1487762705667	Rename type 'UserManager'
+1487762735774	Rename type 'UserService'
+1487767002384	Move compilation unit
+1487767731865	Delete element
+1487769654123	Move package
+1487797025796	Delete element
+1487798516932	Delete element
+1487806043893	Delete element
+1487845843996	Rename type 'TaskManeger'
+1487887526153	Delete element
