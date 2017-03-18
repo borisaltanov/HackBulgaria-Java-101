@@ -10,12 +10,12 @@ public class Main {
 		
 		int numberOfPoints = scanner.nextInt();
 		
-		GameOfLife game = new GameOfLife(20);
+		GameOfLifeBetter game = new GameOfLifeBetter(20);
 		
 		for (int i = 0; i < numberOfPoints; i++) {
 			int x = scanner.nextInt();
 			int y = scanner.nextInt();
-			game.fillSquare(x, y);
+			game.insert(x, y);
 		}
 		
 		scanner.close();
@@ -23,7 +23,7 @@ public class Main {
 		System.out.println(game);
 		
 		while(true) {
-			game.mark();
+			game.nextGeneration();
 			System.out.println(game);
 			Thread.sleep(200);
 			System.out.println("\n\n");
