@@ -1,6 +1,0 @@
-package dungeonsAndZombies;
-
-public class Spell extends Tool {
-	private int manaCost;
-	private int castRange;
-}

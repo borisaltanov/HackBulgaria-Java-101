@@ -1,5 +1,0 @@
-2
-inc x = x + 1
-dec x = x - inc(0)
-dec . dec
-2

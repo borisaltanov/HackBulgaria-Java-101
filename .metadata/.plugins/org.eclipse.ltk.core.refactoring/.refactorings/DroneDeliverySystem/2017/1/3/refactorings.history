@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename package &apos;dronedeliverysystem&apos; to &apos;droneDeliverySystem&apos;&#x0A;- Original project: &apos;DroneDeliverySystem&apos;&#x0A;- Original element: &apos;DroneDeliverySystem/src/dronedeliverysystem&apos;&#x0A;- Renamed element: &apos;DroneDeliverySystem/src/droneDeliverySystem&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;dronedeliverysystem&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;dronedeliverysystem" name="droneDeliverySystem" qualified="false" references="true" stamp="1484679935346" textual="false" version="1.0"/>
-</session>

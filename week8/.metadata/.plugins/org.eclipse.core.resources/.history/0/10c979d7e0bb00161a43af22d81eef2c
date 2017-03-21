@@ -1,6 +1,0 @@
-package dungeonsAndZombies;
-
-public interface HeroInterface {
-	public String knownAs();
-	
-}
