@@ -1,6 +1,0 @@
-package week02;
-
-public class Vector<T> {
-	T[] arr = (T[]) new Object[10];
-
-}
