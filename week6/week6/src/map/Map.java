@@ -1,8 +1,6 @@
-package Tuesday;
+package map;
 
 import java.util.LinkedList;
-
-import javax.swing.plaf.synth.SynthSeparatorUI;
 
 public class Map<K, V> implements MapInterface<K, V>{
 	private LinkedBucket<K, V> [] buckets;
@@ -10,6 +8,7 @@ public class Map<K, V> implements MapInterface<K, V>{
 	private int size;
 	private int elementsIn;
 	
+	@SuppressWarnings("unchecked")
 	public Map() {
 		// TODO Auto-generated constructor stub
 		size = 8;

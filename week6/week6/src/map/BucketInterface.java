@@ -1,4 +1,4 @@
-package Tuesday;
+package map;
 
 public interface BucketInterface<K, V> {
 	

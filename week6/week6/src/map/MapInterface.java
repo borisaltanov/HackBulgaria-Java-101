@@ -1,4 +1,4 @@
-package Tuesday;
+package map;
 
 public interface MapInterface<K, V> {
 	public void put(K key, V value);

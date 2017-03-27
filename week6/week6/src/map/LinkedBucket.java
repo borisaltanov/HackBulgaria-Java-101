@@ -1,4 +1,4 @@
-package Tuesday;
+package map;
 
 import java.util.LinkedList;
 

@@ -1,4 +1,4 @@
-package Tuesday;
+package Thursday;
 
 public class BulgarianPerson extends Person{
 	private String ucn;
